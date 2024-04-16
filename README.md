@@ -15,4 +15,8 @@ I am an independent educator who creates meaningful projects to teach programmin
 
 ## TOC
 
-- [Generate, Validate, Expire OTP](https://github.com/tapascript/js-projects/tree/main/otp-box)
+| Project                                                                                        | Video                                                          |   Language   |
+| -----------                                                                                    | -----------                                                    | -----------  |
+| [Generate, Validate, Expire OTP](https://github.com/tapascript/js-projects/tree/main/otp-box)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw)  | Bangla(বাংলা) |
+
+
