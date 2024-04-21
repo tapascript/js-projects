@@ -24,6 +24,17 @@ function expireOTP() {
 
 function tackleOTPBoxes() {
   const boxes = document.getElementById("otp-box-list-id");
+
+   boxes.addEventListener('keydown', function(event) {
+    const key = event.key; 
+    const preElement = event.target.previousElementSibling;
+    if (key === "Backspace" || key === 8 ) {
+      preElement.focus();
+      event.target.value = "";
+      return;
+    }
+});
+  
   boxes.addEventListener("input", function(e) {
     const target = e.target;
     const value = target.value;
