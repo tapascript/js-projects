@@ -2,40 +2,52 @@ let generatedOTP;
 
 const otpExpireElem = document.getElementById('otp-expires-id');
 
-function expireOTP() {
+function generateOTP() {
+  generatedOTP = Math.floor(1000 + Math.random() * 9000);
+  const otpElem = document.getElementById("geenerated-otp-id");
+  otpElem.innerText = `Your OTP: ${generatedOTP}`;
 
+  expireOTP();
+}
+
+function expireOTP() {
   const totalTime = 15000;
   const interval = 1000;
 
   let slice = totalTime / interval;
 
-  const intvId = setInterval(function() {
+  const intvId = setInterval(function () {
     otpExpireElem.innerText = `OTP will expire in ${slice} seconds`;
     slice = slice - 1;
   }, interval);
 
-  setTimeout(function() {
+  setTimeout(function () {
     otpExpireElem.innerText = "OTP Expired";
-    clearInterval(intvId);
-    generateOTP();
+    const typedNumber = getTypedNumber();
+    if(generatedOTP == parseInt(typedNumber, 10)){
+      otpExpireElem.innerText = "✓";
+      clearInterval(intvId);
+    }
+    else{
+      generateOTP();
+    }
   }, totalTime);
-
 }
 
 function tackleOTPBoxes() {
   const boxes = document.getElementById("otp-box-list-id");
-  boxes.addEventListener("input", function(e) {
+  boxes.addEventListener("input", function (e) {
     const target = e.target;
     const value = target.value;
 
-    if(isNaN(value)) {
+    if (isNaN(value)) {
       target.value = "";
       return;
     }
-    
+
     const nextElement = target.nextElementSibling;
 
-    if(nextElement) {
+    if (nextElement) {
       nextElement.focus();
     }
 
@@ -43,22 +55,21 @@ function tackleOTPBoxes() {
   })
 }
 
-function generateOTP() {
-  generatedOTP = Math.floor(1000 + Math.random() * 9000);
-  const otpElem = document.getElementById("geenerated-otp-id");
 
-  otpElem.innerText = `Your OTP: ${generatedOTP}`;
-  
-  expireOTP();
-}
 
-function validateOTP() {
+function getTypedNumber() {
   let typedNumber = "";
+
   const boxListElem = document.getElementById("otp-box-list-id");
   [...boxListElem.children].forEach((elem) => {
     typedNumber = typedNumber + elem.value;
   });
+  return typedNumber;
+}
 
+function validateOTP() {
+
+  const typedNumber = getTypedNumber();
   console.log(generatedOTP, typedNumber);
 
   const result = (generatedOTP === parseInt(typedNumber, 10));
@@ -73,7 +84,6 @@ function validateOTP() {
     resultElem.classList.add("fail");
   }
 
-  
 }
 
 
