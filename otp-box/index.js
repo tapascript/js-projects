@@ -1,4 +1,6 @@
 let generatedOTP;
+let intervalId;
+let timeoutId;
 
 const otpExpireElem = document.getElementById('otp-expires-id');
 
@@ -9,14 +11,14 @@ function expireOTP() {
 
   let slice = totalTime / interval;
 
-  const intvId = setInterval(function() {
+  intervalId = setInterval(function() {
     otpExpireElem.innerText = `OTP will expire in ${slice} seconds`;
     slice = slice - 1;
   }, interval);
 
-  setTimeout(function() {
+  timeoutId = setTimeout(function() {
     otpExpireElem.innerText = "OTP Expired";
-    clearInterval(intvId);
+    clearInterval(intervalId);
     generateOTP();
   }, totalTime);
 
@@ -67,6 +69,14 @@ function validateOTP() {
     resultElem.innerText = "OTP has been validate successfully";
     resultElem.classList.remove("fail");
     resultElem.classList.add("success");
+
+
+    // stopping the interval and the timeout to stop the expiry timer
+    clearInterval(intervalId);
+    clearTimeout(timeoutId);
+
+    // clearing the expiry message
+    otpExpireElem.innerText = '';
   } else {
     resultElem.innerText = "OTP is Invalid";
     resultElem.classList.remove("success");
