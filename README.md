@@ -11,12 +11,13 @@ Liked it? You can show your support with a STAR(⭐).
 
 ### Sponsor My Work
 
-I am an independent educator who creates meaningful projects to teach programming. You can support me further by [sponsoring me on GitHub](https://github.com/sponsors/atapas).
+> I am an independent educator who creates meaningful projects to teach programming. You can support me further by [sponsoring me on GitHub](https://github.com/sponsors/atapas).
 
 ## TOC
 
 | Project                                                                                        | Video                                                                        |   Technology Stack    |
 | -----------                                                                                    | -----------                                                                  | -----------            |
 | [Generate, Validate, Expire OTP](https://github.com/tapascript/js-projects/tree/main/otp-box)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw) - Bangla(বাংলা) |  JavaScript, HTML, CSS |
+| [Movie Mania - Take One](https://github.com/tapascript/js-projects/tree/main/otp-box)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw) - Bangla(বাংলা) |  JavaScript, HTML, TailwindCSS |
 
 
