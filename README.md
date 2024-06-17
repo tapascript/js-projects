@@ -18,5 +18,6 @@ I am an independent educator who creates meaningful projects to teach programmin
 | Project                                                                                        | Video                                                                        |   Technology Stack    |
 | -----------                                                                                    | -----------                                                                  | -----------            |
 | [Generate, Validate, Expire OTP](https://github.com/tapascript/js-projects/tree/main/otp-box)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw) - Bangla(বাংলা) |  JavaScript, HTML, CSS |
+| [Movie Mania - Take One](https://github.com/tapascript/js-projects/tree/movie-mania-take-one/movie-mania)  | [Video Tutorial](https://youtu.be/HHY3aRhLhJQ) - Bangla(বাংলা) |  JavaScript, HTML, TailwindCSS |
 
 
