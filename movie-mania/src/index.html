@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>Movie Mania</title>
-  <script type="module" src="./index.js"></script>
+  <script type="module" src="./index.js" defer></script>
 </head>
 <body>
   <div class="flex flex-col">
@@ -18,7 +18,13 @@
       <div class="card" id="tReviewsId"></div>
     </div>
     <div class="p-4" id="movieListId">
-      <h2 class="text-2xl">Movie Reviews</h2>
+      <div class="flex">
+        <h2 class="text-2xl">Movie Reviews</h2>
+        <span class="mx-2 mt-[5px]">|</span>
+        <button id="srtBtnId">sort by rating</button>
+        <span class="mx-2 mt-[5px]">|</span>
+        <button id="grpBtnId">Group</button>
+      </div>
       <ul class="my-2"></ul>
     </div>
   </div>
