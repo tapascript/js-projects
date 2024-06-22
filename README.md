@@ -18,6 +18,5 @@ Liked it? You can show your support with a STAR(⭐).
 | Project                                                                                        | Video                                                                        |   Technology Stack    |
 | -----------                                                                                    | -----------                                                                  | -----------            |
 | [Generate, Validate, Expire OTP](https://github.com/tapascript/js-projects/tree/main/otp-box)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw) - Bangla(বাংলা) |  JavaScript, HTML, CSS |
-| [Movie Mania - Take One](https://github.com/tapascript/js-projects/tree/main/otp-box)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw) - Bangla(বাংলা) |  JavaScript, HTML, TailwindCSS |
-
-
+| [Movie Mania - Take One](https://github.com/tapascript/js-projects/tree/movie-mania-take-one)  | [Video Tutorial](https://www.youtube.com/watch?v=zjGwq0ep2Aw) - Bangla(বাংলা) |  JavaScript, HTML, TailwindCSS |
+| [Movie Mania - Take Two](https://github.com/tapascript/js-projects/tree/movie-mania-take-two)  | [Video Tutorial](https://youtu.be/ag1LlKbz0Go) - Bangla(বাংলা) |  JavaScript, HTML, TailwindCSS |
